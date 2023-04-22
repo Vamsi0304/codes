@@ -1,0 +1,8 @@
+import functools
+nums=[1,2,3,4,5]
+evens=list(filter(lambda a:a%2==0,nums))
+print(evens)
+dobles=list(map(lambda a:a*2,nums))
+print(dobles)
+a=functools.reduce(lambda a,b:a+b,dobles)
+print(a)
