@@ -1,0 +1,12 @@
+n = int(input("Enter a prime number:"))
+if n == 1:
+    print("the given number is neither a prime nor a composite")
+if n == 2:
+    print("the given number is prime")
+if n > 2:
+    for i in range(2, n):
+        if n % i == 0:
+            print("the given number is not a prime")
+            break
+    else:
+        print("the given number is prime")
